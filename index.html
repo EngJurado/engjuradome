@@ -10,65 +10,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #11111b;
-        }
-        p, a, strong {
-            color: #cdd6f4;
-        }
-        strong {
-            font-size: 2.5rem;
-        }
-        a{
-            text-decoration: none;
-            font-size: 2.25rem;
-        }
-        @media (min-width: 768px) {
-            strong {
-                font-size: 3.4rem;
-            }
-            p {
-                font-size: 1.2rem;
-            }
-            a{
-                font-size: 2.7rem;
-            }
-        }
-        @media (min-width: 1200px) {
-            strong {
-                font-size: 4.08rem; /* Tamaño de fuente mayor para pantallas grandes */
-            }
-            p {
-                font-size: 1.44rem;
-            }
-            a {
-                font-size: 3.24rem;
-            }
-        }
-    </style>
+<body data-theme="dark"> <!-- Default to dark theme -->
+
+    <!-- Theme Switch Button -->
+    <button class="theme-switch" id="themeSwitch">🌙</button>
+
+    <!-- Main Content -->
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-5">
-                <div class="card text-bg-dark text-center">
-                    <img src="image.webp" class="card-img" alt="Carlos Jurado">
+        <div class="row justify-content-center align-items-center w-100">
+            <!-- Card Column - Responsive Width -->
+            <div class="col-12 col-md-8 col-lg-6 m-0 p-0">
+                <div class="card text-center card-main">
+                    <img src="image.webp" class="card-img" alt="Shiro">
                     <div class="card-img-overlay d-flex flex-column justify-content-center">
                         <h1 class="card-title"><strong>Carlos Jurado</strong></h1>
-                        <p class="card-text">Passionate about AI and experienced in medical devices, I design innovative solutions to real-world challenges. Let’s connect!</p>
+                        <p>Bioengineer & AI Specialist</p>
+                        <p class="card-text"> Passionate about AI and experienced in medical devices, I design innovative solutions to real-world challenges. Let’s connect!</p>
                         <p>
-                            <a href="https://www.linkedin.com/in/engjurado/" aria-label="Follow me on LinkedIn"><i class="bi bi-linkedin"></i> </a>
-                            <a href="https://github.com/EngJurado" aria-label="Follow me on GitHub"><i class="bi bi-github"></i> </a>
-                            <a href="https://telegram.me/engjurado" aria-label="Talk me on Telegram"><i class="bi bi-telegram"></i> </a>
-                            <a href="https://x.com/EngJurado" aria-label="Follow me on Twitter/X"><i class="bi bi-twitter-x"></i></a>
-                            <a href="Resume.pdf" aria-label="Resume"><i class="bi bi-file-earmark-arrow-down"></i> </a>
+                            <!-- Icons with uniform spacing -->
+                            <a href="https://github.com/EngJurado" aria-label="Follow me on GitHub" class="icon-spacing social"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/engjurado/" aria-label="Follow me on LinkedIn" class="icon-spacing social"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://telegram.me/engjurado" aria-label="Talk me on Telegram" class="icon-spacing social"><i class="bi bi-telegram"></i></a>
+                            <a href="https://wa.me/qr/Y57EJ6RVNLYQI1" aria-label="Talk me on WhatsApp" class="icon-spacing social"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://x.com/EngJurado" aria-label="Follow me on Twitter/X" class="icon-spacing social"><i class="bi bi-twitter-x"></i></a>
+                            <a href="Resume.pdf" aria-label="Resume" class="icon-spacing social"><i class="bi bi-file-earmark-arrow-down"></i></a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
