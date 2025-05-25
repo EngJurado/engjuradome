@@ -64,7 +64,7 @@ strong {
 
 a {
     text-decoration: none;
-    font-size: 2.2rem; /* Phone size */
+    font-size: 1.76rem; /* Phone size */
 }
 
 p {
@@ -83,7 +83,7 @@ p {
         font-size: 1.5rem;
     }
     a {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -95,7 +95,7 @@ p {
         font-size: 2rem;
     }
     a {
-        font-size: 4rem;
+        font-size: 3.2rem;
     }
 }
 
