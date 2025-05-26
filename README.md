@@ -1,49 +1,80 @@
-# Carlos Jurado's Personal Website
+# Carlos Jurado
 
-This is the source code for Carlos Jurado's personal website. The website provides information about Carlos Jurado, a Bioengineer & AI Specialist, and includes links to his social media profiles and resume.
+A modern, responsive Astro website featuring a gallery and hero section with self-hosted fonts for better performance and privacy.
 
-## Table of Contents
+## 🚀 Project Structure
 
-- [Demo](#demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup](#setup)
-- [License](#license)
+```text
+/
+├── public/
+│   └── assets/
+├── src/
+│   ├── components/
+│   │   └── HeroCard.astro
+│   ├── layouts/
+│   │   └── MainLayout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-## Demo
+## 🛠️ Technologies Used
 
-You can visit the live website at [engjurado.me](https://engjurado.me).
+- **Astro** v5.6.1 - Static site generator
+- **Bootstrap** v5.3.5 - CSS framework (self-hosted)
+- **Font Awesome** v6.7.2 - Icons (self-hosted)
+- **@fontsource/roboto** v5.2.5 - Roboto font family (self-hosted)
 
-## Features
+## ✨ Features
 
-- **Dark/Light Theme Toggle:** Users can switch between dark and light themes.
-- **Responsive Design:** The website is fully responsive and works on different screen sizes.
-- **Social Media Links:** Links to Carlos Jurado's GitHub, LinkedIn, Telegram, WhatsApp, Twitter/X, and resume.
-- **Material Design Palette:** Uses a modern design palette for a clean and professional look.
+- 🎨 **Self-hosted fonts** - No CDN dependencies for better performance and privacy
+- 📱 **Responsive design** - Works on all device sizes
+- 🖼️ **Image gallery** - Showcase artwork with artist attribution
+- 🌙 **Dark theme** - Modern dark design with custom background patterns
+- ⚡ **Fast loading** - Optimized with Astro's static generation
+- 🔒 **Privacy-focused** - No external font requests to Google or other CDNs
 
-## Technologies Used
+## 🧞 Commands
 
-- **HTML5:** Markup language used for structuring the content.
-- **CSS3:** Stylesheet language used for describing the presentation of the document.
-- **JavaScript:** Programming language used to create the theme switch functionality.
-- **Bootstrap:** CSS framework used for responsive design and styling.
-- **Google Fonts:** Used for custom fonts.
-- **Bootstrap Icons:** Used for social media icons.
+All commands are run from the root of the project, from a terminal:
 
-## Setup
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local development server at `localhost:4321` |
+| `npm run build`           | Builds your production site to `./dist/`         |
+| `npm run preview`         | Previews your build locally                      |
+| `npm run astro ...`       | Runs Astro CLI commands                          |
+| `npm run astro -- --help` | Gets help using the Astro CLI                    |
 
-To run this project locally, follow these steps:
+## 📦 Dependencies
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/EngJurado/engjuradome.git
-    ```
-2. Navigate to the project directory:
-    ```sh
-    cd engjuradome
-    ```
-3. Open `index.html` in your preferred web browser.
+### Core Framework
+- `astro`: The main static site generator framework
 
-## License
+### UI & Styling
+- `bootstrap`: Responsive CSS framework (self-hosted)
+- `@fortawesome/fontawesome-free`: Icon library (self-hosted)
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+### Fonts
+- `@fontsource/roboto`: Primary font family with multiple weights
+
+## 🎯 Performance Benefits
+
+This project uses self-hosted fonts and libraries instead of CDNs for:
+- **Faster loading** - No external network requests
+- **Better privacy** - No data sent to third-party services
+- **Offline support** - Works without internet connection
+- **Consistent performance** - No dependency on external CDN availability
+- **GDPR compliance** - No third-party tracking
+
+## 📚 Documentation
+
+For more information about the technologies used:
+- [Astro Documentation](https://docs.astro.build)
+- [Bootstrap Documentation](https://getbootstrap.com/docs/)
+- [Fontsource Documentation](https://fontsource.org/)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
